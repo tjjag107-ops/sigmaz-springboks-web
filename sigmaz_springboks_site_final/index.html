@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sigmaz Springboks</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/Rugby_pitch.svg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+    }
+    .overlay {
+      background: rgba(0, 50, 0, 0.85);
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+    }
+    header {
+      padding: 20px;
+    }
+    .logo img {
+      max-width: 180px;
+    }
+    h1 {
+      font-size: 2.8em;
+      margin: 10px 0;
+      color: #ffcc00;
+      text-transform: uppercase;
+      text-shadow: 0 0 15px #ff6600;
+    }
+    .slogan {
+      font-size: 1.5em;
+      font-style: italic;
+      color: #ff6600;
+      margin-bottom: 20px;
+    }
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      font-size: 1.2em;
+    }
+    .menu div {
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid #ffcc00;
+      border-radius: 12px;
+      padding: 12px 20px;
+      width: 260px;
+      transition: transform 0.3s;
+    }
+    .menu div:hover {
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.2);
+    }
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.7);
+    }
+    .qr-section img {
+      width: 150px;
+      margin-top: 15px;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    a.email-link {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.email-link:hover {
+      color: #ff6600;
+    }
+    .flames {
+      position: fixed;
+      bottom: 0; left: 0;
+      width: 100%; height: 100px;
+      background: url('https://i.ibb.co/5rYhYzS/flames.gif') repeat-x;
+      background-size: contain;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Sigmaz Springboks Logo">
+    </div>
+    <h1>Sigmaz Springboks</h1>
+    <p class="slogan">Braai, Fry, and Fly High!</p>
+  </header>
+
+  <section class="menu">
+    <div>Prego Rolls — R30</div>
+    <div>Buddies — R15</div>
+    <div>Lemonade — R25</div>
+    <div>Water Balloon Throwing — R5</div>
+    <div>Fidgets — R20</div>
+  </section>
+
+  <footer>
+    <p>Pre-order now via email: 
+      <a href="mailto:tjjag107@gmail.com?subject=Springboks%20Pre-Order" class="email-link">tjjag107@gmail.com</a>
+    </p>
+    <div class="qr-section">
+      <p>Or scan the QR code:</p>
+      <img src="qr.jpeg" alt="QR Code">
+    </div>
+  </footer>
+
+  <div class="flames"></div>
+</body>
+</html>
